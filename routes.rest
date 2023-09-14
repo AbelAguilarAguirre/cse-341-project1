@@ -1,0 +1,36 @@
+GET http://localhost:3000/users 
+
+###
+
+GET http://localhost:3000/users/650153704dec406df328829c
+
+###
+
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Luisa",
+  "lastName": "Aguilar Jimenez",
+  "email": "email4@email.com",
+  "favoriteColor": "Pink",
+  "birthday": "11/7/19"
+}
+
+###
+
+PUT http://localhost:3000/users/650153704dec406df328829c HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Abel",
+  "lastName": "Aguilar Jimenez",
+  "email": "email10@email.com",
+  "favoriteColor": "Orange",
+  "birthday": "2/3/17"
+}
+
+###
+
+DELETE http://localhost:3000/users/65036bc470bd0da38fd8ecc9 HTTP/1.1
+
